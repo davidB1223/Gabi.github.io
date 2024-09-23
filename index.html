@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ro">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te iubesc!</title>
+    <style>
+        body {
+            background-color: #fdfcdc;
+            margin: 0;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #0081a7;
+        }
+
+        h1 {
+            font-size: 60px;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+
+        /* Flexbox for the main content (default for small screens) */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        p {
+            width: 100%;
+            max-width: 400px; /* Increased max-width for larger screens */
+            color: #0081a7;
+            background-color: #fed9b7;
+            border-radius: 30px;
+            opacity: 70%;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            transition: opacity 0.7s ease;
+        }
+
+        p:hover {
+            opacity: 100%;
+        }
+
+        /* Responsive images */
+        .poze {
+			
+            text-align: center;
+            padding-top: 40px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 40px;
+            max-width: 400px; /* Set a max-width for large screens */
+            margin-bottom: 20px;
+        }
+
+        .poza1 {
+            padding: 10px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 1024px) {
+            h1 {
+                font-size: 48px;
+            }
+
+            h2 {
+                font-size: 28px;
+            }
+
+            /* Adjust paragraphs to fit better on small screens */
+            p {
+                width: 90%;
+                margin: 10px auto;
+                padding: 15px;
+            }
+
+            img {
+                width: 80%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 36px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            img {
+                width: 80%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            .poza1 img {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+
+        /* Apply original float-based layout for larger screens */
+        @media (min-width: 1025px) {
+            .container {
+                display: block; /* Revert to block layout */
+            }
+
+            p {
+                float: left;
+                width: 27%; /* Increase width for larger boxes */
+                margin: 1%;
+                padding: 2%;
+                text-align: center;
+            }
+
+            .poze {
+				max-width: 92%;
+                width: 91%;
+                font-size: 200%;
+                padding-top: 90px;
+				margin-left: 2%; 
+            }
+
+            img {
+                width: 80%;
+                padding: 7%;
+                border-radius: 40px;
+            }
+
+            .poza1 {
+                width: 400px;
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Te iubesc!</h1>
+    <h2>De ce ar trebui sa ma iei de sot ?</h2>
+
+    <!-- Flex container for the main content -->
+    <div class="container">
+        <p style="padding-top: 61px; padding-bottom: 55px;"><b>Sunt un baiat bun</b><br>
+            Sunt un baiat bun si vreau sa iti fiu sot si sa iti fiu tata al copiilor tai, sunt smecher, imi merge capu, te iubesc din tot sufletul meu si iti doresc numai binele, si stiu sa fierb apa, ce sa mai, sunt bun de insurat, DOAR CU TINE!!!!!!!!! <img src="img2.jpg" alt="Image 2">
+        </p>
+
+
+        <p style="padding-top: 60px; padding-bottom: 90px;"><b>O sa dormim impreuna pentru totdeauna</b><br>
+            Daca ma iei de sot vom putea dormi impreuna pentru totdeauna, vom putea gati impreuna, vom face multi multi bebe, vom face baita impreuna si ne vom petrece tot restul vietii impreuna<img src="img1.JPG" alt="Image 1">
+        </p>
+
+        <p style="padding-top: 57px; padding-bottom: 109px;"><b>Fun Facts</b><br>
+            Pe Gabi o cheama Gabi, o va chema Domnisoara Doctor Bobeica Gabriela. Este nascuta pe 26 octombrie 2006. Poarta la inel marimea 52. Pe data de 9 august 2023 la ora 23 ne-am cunoscut, pe data de 29 august a realizat ca ma place, doamne ce noroc pe mine, pe data de 24 octombrie mi a spus ca ma iubeste si pe 28 octombrie ne-am oficializat relatia. Poreclele: zana mea, dragostea mea, sufletul meu, unicornul, delfino, iubire, iubita mea, frumoaso, sotia mea, femeia mea, rapanoaso, paduchioaso. Acum pe o nota serioasa iubire, te iubesc din tot sufletul meu, tu esti totul meu, viitorul meu, esti tot ce mi-am dorit vreodata.<img src="img3.JPG" alt="Image 3">
+        </p>
+    </div>
+
+    <!-- Image gallery -->
+    <p class="poze"><b>Poze cu Gabi</b><br>
+        <img class="poza1" src="img4.jpg" alt="Image 4">
+        <img class="poza1" src="img5.jpg" alt="Image 5">
+        <img class="poza1" src="img6.jpg" alt="Image 6">
+        <img class="poza1" src="img7.jpg" alt="Image 7">
+        <img class="poza1" src="img8.JPG" alt="Image 8">
+        <img class="poza1" src="img9.JPG" alt="Image 9">
+        <img class="poza1" src="img10.JPG" alt="Image 10">
+    </p>
+
+</body>
+</html>
